@@ -65,14 +65,17 @@ h1, h2, h3, h4, h5 {
 /* ---------------- NAVIGATION ---------------------- */
 nav {
 	/* width: 61.5%; */
-	display:flex;
-	justify-content:space-between;
+    display:flex;
+    justify-content:center;
+    width:100%;
+	/* justify-content:space-between; */
 	align-items:center;
     margin: 1% 0%;
 }
 
 nav a {
     padding:35px;
+    justify-content:space-between;
     color:grey;
     text-decoration:none;
 }
@@ -130,7 +133,7 @@ button{
 #top-content{
 	display:flex;
 	justify-content:space-between;
-	padding:5% 0;
+	padding:5% 4%;
 }
 
 
@@ -143,7 +146,8 @@ button{
 #bottom-content{
 	display:flex;
 	justify-content:space-between;
-	border-bottom:1px solid black;
+    border-bottom:1px solid black;
+    padding:3% 4%;
 }
 
 .bottom{
@@ -152,7 +156,7 @@ button{
 }
 
 #contact{
-	padding: 5% 0;
+	padding: 5% 4%;
 }
 /* ---------------------FOOTER------------------------ */
 footer{
@@ -292,7 +296,7 @@ li{
 
 @media(max-width: 800px){
     body{
-        background-color: lightgoldenrodyellow;
+        /* background-color: lightgoldenrodyellow; */
         width:100%;
     }    
     
@@ -354,21 +358,18 @@ li{
     nav .logo{
         order:-6;
         border-bottom:1px solid grey;
+        padding: 35px 160px;
+    }
+
+    .header{
+        padding-top:9%;
     }
 
     body{
-        background-color:lightcyan;
+        /* background-color:lightcyan; */
         width:100%;
     }
 
-    /* .all .top-content{
-        display:flex;
-        justify-content:center;
-    } */
-
-    /*.all{
-        display:flex;
-    } */
     .all #top-content{
         flex-direction:column;
         padding:4%;
