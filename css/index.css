@@ -68,15 +68,18 @@ nav {
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
-    margin: 1% 0;
+    margin: 1% 0%;
 }
 
 nav a {
-    padding:26px;
+    padding:35px;
     color:grey;
-	text-decoration:none;
+    text-decoration:none;
 }
 
+nav .logo{
+    padding:35px;
+}
 
 
 /* -------------------- HEADER ------------------------ */
@@ -166,7 +169,7 @@ footer{
 
 body{
 	/* background-color:pink; */
-	padding:0 5%;
+	/* padding:0 5%; */
 
 }
 
@@ -298,7 +301,7 @@ li{
         align-items:center;
         flex-direction:column;
         margin: 2% 0;
-        padding:3%;
+        /* padding:3%; */
         flex-wrap:wrap;
     }
 
@@ -331,7 +334,7 @@ li{
         display:flex;
         justify-content:center;
         align-items:center;
-        margin: 1% 0;
+        margin: 1% 0%;
         width:100%;
     }
 
@@ -355,7 +358,40 @@ li{
 
     body{
         background-color:lightcyan;
+        width:100%;
     }
 
+    /* .all .top-content{
+        display:flex;
+        justify-content:center;
+    } */
 
+    /*.all{
+        display:flex;
+    } */
+    .all #top-content{
+        flex-direction:column;
+        padding:4%;
+    }
+
+    .all #bottom-content{
+        flex-direction:column;
+        padding:4%;
+    }
+
+    .top{
+        width:90%;
+        padding:2%;
+    }
+
+    .bottom{
+        width:90%;
+        padding:2%;
+    }
+    
+    #contact{
+        width:90%;
+        padding:2%;
+        margin:4%;
+    }
 }
