@@ -1,3 +1,398 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* ---------------- NAVIGATION ---------------------- */
+nav {
+	/* width: 61.5%; */
+    display:flex;
+    justify-content:center;
+    width:100%;
+	/* justify-content:space-between; */
+	align-items:center;
+    margin: 1% 0%;
+}
+
+nav a {
+    padding:35px;
+    justify-content:space-between;
+    color:grey;
+    text-decoration:none;
+}
+
+nav .logo{
+    padding:35px;
+}
+
+
+/* -------------------- HEADER ------------------------ */
+header{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	/* width: 61.5%; */
+	border-bottom:1px solid black;
+	padding:5%;
+}
+
+.innovation{
+	text-align:center;
+}
+
+h1{
+	font-size:60px;
+}
+
+button{
+	padding:5px 9px;
+	border:2px solid black;
+}
+#header-image{
+	margin-left:14%;
+}
+
+/* ------------------------ ALL ---------------------- */
+.all{
+	/* display:flex;
+	justify-content:space-between; */
+	/* flex-wrap:wrap; */
+	/* width: 61.5%; */
+}
+
+/* p {
+	font-size:12px;
+} */
+
+#main-image{
+	padding-bottom:5%;
+	width: 100%;
+
+}
+
+/* -------------------------TOP----------------------- */
+#top-content{
+	display:flex;
+	justify-content:space-between;
+	padding:5% 4%;
+}
+
+
+.top{
+	width:48%;
+}
+
+
+/* ----------------------- BOTTOM---------------------- */
+#bottom-content{
+	display:flex;
+	justify-content:space-between;
+    border-bottom:1px solid black;
+    padding:3% 4%;
+}
+
+.bottom{
+	padding-bottom:5%;
+	width:31%;
+}
+
+#contact{
+	padding: 5% 4%;
+}
+/* ---------------------FOOTER------------------------ */
+footer{
+	text-align:center;
+	color:grey;
+	margin-bottom:5%;
+	/* width: 61.5%; */
+}
+/* ----------------------- UNIVERSAL-------------------- */
+*{
+	box-sizing:border-box;
+	/* max-width:61.5%%; */
+}
+
+body{
+	/* background-color:pink; */
+	/* padding:0 5%; */
+
+}
+
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* --------------- SERVICES PAGE --------------------- */
+
+
+/* -------------------- HEADER ----------------------- */
+.services-header-img{
+	width:100%;
+	margin-top:2%;
+}
+
+h2{
+	font-size:25px;
+}
+
+div #services-para{
+	width:100%;
+	padding-bottom:4%;
+	margin:4% 0%;
+	border-bottom: 1px solid black;
+}
+
+/* --------------------BOXES---------------------------- */
+.boxes{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	padding-bottom:4%;
+	margin:4% 0%;
+	border-bottom: 1px solid black;
+}
+
+.boxes div{
+	background-color: #F0F0F0;
+	border:1px solid black;
+	padding:3%;
+	width:47.5%;
+	margin:2% 0%;
+
+}
+
+
+/* ---------------------SERVICES------------------------- */
+
+.services-bottom{
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:4%;
+}
+
+.services-bottom div{
+	width:40%;
+}
+
+ul {  
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+li{
+	margin:2%;
+}
+
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/*  --------------------- PRODUCT PAGE ----------------- */
+
+.product-header-img{
+	width:100%;
+}
+
+.product-boxes{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	align-items:center;
+	border-bottom: 1px solid black;
+	padding-bottom:5%;
+	margin-bottom:5%;
+}
+
+.product-boxes div{
+	width:28%;
+	padding:2%;
+	text-align:center;
+}
+
+.commit-pic{
+	width:28%;
+	margin: 2% 0%;
+	opacity:1;
+	transition: .5s ease;
+  	backface-visibility: hidden;
+}
+
+/* ---------------------HOVERS-------------------------- */
+.come:hover{
+	opacity: 0.3;
+}
+
+.lead:hover{
+	opacity: 0.3;
+}
+
+.leader:hover{
+	opacity: 0.3;
+}
+
+.product-bottom{
+	width:100%;
+	margin-bottom:5%;
+}
+
+/* ----------------------------------------------------- */
+/* --------------------MEDIA QUERIES-------------------- */
+/* ----------------------------------------------------- */
+
+@media(max-width: 800px){
+    body{
+        /* background-color: lightgoldenrodyellow; */
+        width:100%;
+    }    
+    
+    nav {
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        margin: 2% 0;
+        /* padding:3%; */
+        flex-wrap:wrap;
+    }
+
+    nav .links{
+       display:flex;
+       justify-content:center;
+       align-content:center;
+       width:100%; 
+    }
+
+    nav .logo{
+        order:-6;
+    }
+
+    nav a{
+        padding:5%;
+    }
+
+    #header-image{
+        display:none;
+    }
+
+    .header{
+        padding: 0% 0% 5% 0%;
+    }
+}
+
+@media(max-width: 500px){
+    nav {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin: 1% 0%;
+        width:100%;
+    }
+
+    nav .links{
+        width:100%;
+        flex-direction:column;
+    }
+
+    nav a {
+        border-bottom:1px solid grey;
+        text-align:center;
+        padding:3%;
+        flex-wrap:wrap;
+        width:100%;
+    }
+
+    nav .logo{
+        order:-6;
+        border-bottom:1px solid grey;
+        padding: 35px 160px;
+    }
+
+    .header{
+        padding-top:9%;
+    }
+
+    body{
+        /* background-color:lightcyan; */
+        width:100%;
+    }
+
+    .all #top-content{
+        flex-direction:column;
+        padding:4%;
+    }
+
+    .all #bottom-content{
+        flex-direction:column;
+        padding:4%;
+    }
+
+    .top{
+        width:90%;
+        padding:2%;
+    }
+
+    .bottom{
+        width:90%;
+        padding:2%;
+    }
+    
+    #contact{
+        width:90%;
+        padding:2%;
+        margin:4%;
+    }
+}
